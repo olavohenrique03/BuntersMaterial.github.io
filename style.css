@@ -23,6 +23,7 @@ body {
     font-family: 'Poppins' , sans-serif;
 }
 
+/* Header / Cabeçalho */
 #header {
     background-color: var(--color-white);
 
@@ -115,6 +116,7 @@ body {
 .drop-hover2:hover .drop2{
     height: 441px;
 }
+/* End Header / FIM Cabeçalho */
 
 
 #about {
