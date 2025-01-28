@@ -42,13 +42,12 @@ body {
     z-index: 2;
 }
 
-.header-title {
+.header-logo {
     text-decoration: none;
 }
 
-.header-title img {
-    width: 70px;
-    border-radius: 50px;
+.header-logo img {
+    width: 150px;
 }
 
 .navbar ul{
@@ -229,6 +228,49 @@ body {
     filter: brightness(.8);
 }
 
+.container {
+    z-index: 999;
+    position: absolute;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    top: 80vh;
+    left: 0;
+
+    overflow: hidden;
+}
+
+.moving-text-wrapper {
+    display: flex;
+    /* width: max-content; */
+    animation: scroll-left 10s linear infinite;
+}
+
+.moving-text {
+    display: flex;
+    gap: 200px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* position: relative; */
+    white-space: nowrap;
+}
+
+.moving-text span {
+    display: inline-block;
+}
+
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0vh);
+    }
+    100% {
+      transform: translateX(-100vh);
+    }
+}
 
 /* About Company / Sobre a Empresa */
 #sobrenos {
