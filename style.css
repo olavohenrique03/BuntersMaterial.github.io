@@ -229,7 +229,6 @@ body {
 }
 
 .container {
-    z-index: 999;
     position: absolute;
 
     display: flex;
@@ -279,6 +278,34 @@ body {
     height: 80vh;
     display: flex;
     justify-content: center; 
+}
+
+.container-company {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.moving-text-company {
+    position: relative;
+    padding-top: 40vh;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveText 2s ease-out forwards;
+}
+
+@keyframes moveText {
+    from {
+        left: -100%;
+    }
+    to {
+        left: -30%;
+        transform: translateX(-50%);
+    }
 }
 /* End About Company / Fim Sobre a Empresa */
 
