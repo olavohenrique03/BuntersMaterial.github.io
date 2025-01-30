@@ -71,7 +71,7 @@ body {
 
 .navbar ul li a:hover{
     background-color: var(--color-white);
-    color: var(--color-cobalt_blue);
+    color: var(--color-orange);
 }
 
 .drop-hover1 {
@@ -217,14 +217,16 @@ body {
     background: var(--color-orange);
     text-align: center;
     text-decoration: none;
-    
+    transition: transform .3s ease;
 
     border-radius: 10px;
     cursor: pointer;
 }
 
 .button-cta a:hover {
-    transition: all .3s ease;
+    transform: scale(1.1);
+    
+    transition: all .5s ease;
     filter: brightness(.8);
 }
 
@@ -236,9 +238,11 @@ body {
     align-items: center;
     height: 150px;
     width: 100%;
-    top: 80vh;
+    top: 75vh;
     left: 0;
 
+    padding-bottom: 60px;
+    
     overflow: hidden;
 }
 
@@ -251,11 +255,17 @@ body {
 .moving-text {
     display: flex;
     gap: 200px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
     /* position: relative; */
     white-space: nowrap;
+
+    
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 .moving-text span {
@@ -264,10 +274,10 @@ body {
 
 @keyframes scroll-left {
     0% {
-      transform: translateX(0vh);
+      transform: translateX(-100vh);
     }
     100% {
-      transform: translateX(-100vh);
+      transform: translateX(0vh);
     }
 }
 
